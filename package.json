@@ -1,0 +1,25 @@
+{
+  "name": "js-ds-and-algos",
+  "version": "1.0.0",
+  "description": "DS and Algoritgms using javascript",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prasannajit/js-ds-and-algos.git"
+  },
+  "keywords": [
+    "data",
+    "structures",
+    "algorithms",
+    "javascript"
+  ],
+  "author": "prasannajit@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prasannajit/js-ds-and-algos/issues"
+  },
+  "homepage": "https://github.com/prasannajit/js-ds-and-algos#readme"
+}
