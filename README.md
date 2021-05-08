@@ -1,2 +1,3 @@
-# js-ds-and-algos
-Data structures and algorithms using javascript
+# datastructure and algorithms in javascript
+
+Data structures and algorithms in javascript
