@@ -1,4 +1,5 @@
 /**
+ * Search for an item in list of items (O(logn))
  * @param  {Array} arr array of numbers
  * @param  {number} searchItem item to search in array
  * @return {number} if not found return value is -1;

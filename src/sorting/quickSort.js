@@ -1,4 +1,5 @@
 /**
+ * Sorts the input array
  * @param  {Array} arr array to be sorted
  * @param  {number} start=0 start index, not required, default initialized
  * @param  {number} end=arr.length-1 end index, not required, default initialized
