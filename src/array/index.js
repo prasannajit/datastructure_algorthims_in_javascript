@@ -1,3 +1,3 @@
-const kLargestElements = require('./kLargestElments');
+const kLargestElements = require('./kLargestElements');
 
 module.exports = { kLargestElements };
