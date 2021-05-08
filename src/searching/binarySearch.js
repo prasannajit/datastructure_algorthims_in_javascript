@@ -24,6 +24,7 @@ const binarySearch_1 = (arr, searchItem) => {
 
 const binarySearch_2 = (arr, searchItem, start = 0, end = arr.length - 1) => {
     //recursive
+    // space complexity is O(logn) (recursive calls use stack space)
     if (start > end) {
         return -1;
     }
