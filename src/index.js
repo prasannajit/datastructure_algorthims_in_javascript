@@ -2,7 +2,7 @@ const { reverse: { reverse_1, reverse_2, reverse_3 } } = require('./string');
 const { binarySearch: { binarySearch_1, binarySearch_2 } } = require('./searching');
 const { quickSort } = require('./sorting');
 const { MinHeap } = require('./heap');
-const { kLargestElements } = require('./array');
+const { kLargestElements, moveZerosToEnd: { moveZerosToEnd_1, moveZerosToEnd_2 } } = require('./array');
 
 let startTime, endTime;
 // string section - starts
@@ -84,7 +84,18 @@ let startTime, endTime;
 // Array section - starts
 
 // Find K largest elements in an array - starts
-console.log(kLargestElements([1,29,3,45,78,7,13,47,11,73],4));
+// console.log(kLargestElements([1, 29, 3, 45, 78, 7, 13, 47, 11, 73], 4));
 // Find K largest elements in an array - ends
 
+// Move all 0's to beginning keeping the other elements' relative order intact - starts
+let arr = [1,0,4,5,0,0,9,0,8,7,65,0];
+console.log(`Before zeros are moved ${arr}`);
+moveZerosToEnd_1(arr)
+console.log(`After zeros are moved ${arr}`);
+arr = [1,0,4,5,0,0,9,0,8,7,65,0];
+console.log(`Before zeros are moved ${arr}`);
+moveZerosToEnd_2(arr);
+console.log(`After zeros are moved ${arr}`);
+
+// Move all 0's to beginning keeping the other elements' relative order intact - ends
 // Array section - ends
