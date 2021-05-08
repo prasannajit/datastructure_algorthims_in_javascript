@@ -1,5 +1,6 @@
 const { reverse: { reverse_1, reverse_2, reverse_3 } } = require('./string');
 const { binarySearch: { binarySearch_1, binarySearch_2 } } = require('./searching');
+const { quickSort } = require('./sorting');
 
 let startTime, endTime;
 // string section - starts
@@ -27,9 +28,17 @@ let startTime, endTime;
 
 // search section - starts
 // binary search -- starts
-console.log(binarySearch_1([1,5,9,23,45,67,119,232,446,767,899,1023,1234],9));
-console.log(binarySearch_1([1,5,9,23,45,67,119,232,446],446));
-console.log(binarySearch_1([1,5,9,23,45,67,119,232,446],100));
-console.log(binarySearch_1([1],1));
+// console.log(binarySearch_1([1, 5, 9, 23, 45, 67, 119, 232, 446, 767, 899, 1023, 1234], 9));
+// console.log(binarySearch_1([1, 5, 9, 23, 45, 67, 119, 232, 446], 446));
+// console.log(binarySearch_1([1, 5, 9, 23, 45, 67, 119, 232, 446], 100));
+// console.log(binarySearch_1([1], 1));
 // binary search -- ends
 // search section - ends
+
+// sorting section - starts
+// quick sort - starts
+const arr= [29,12,90,22,23,45,1,2,78,2];
+quickSort(arr);
+console.log(arr);
+// quick sort - ends
+// sorting section - ends
