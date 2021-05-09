@@ -3,6 +3,7 @@ const { binarySearch: { binarySearch_1, binarySearch_2 } } = require('./searchin
 const { quickSort } = require('./sorting');
 const { MinHeap } = require('./heap');
 const { kLargestElements, moveZerosToEnd: { moveZerosToEnd_1, moveZerosToEnd_2 } } = require('./array');
+const { LinkedList } = require('./linkedList');
 
 let startTime, endTime;
 // string section - starts
@@ -87,15 +88,30 @@ let startTime, endTime;
 // console.log(kLargestElements([1, 29, 3, 45, 78, 7, 13, 47, 11, 73], 4));
 // Find K largest elements in an array - ends
 
-// Move all 0's to beginning keeping the other elements' relative order intact - starts
-let arr = [1,0,4,5,0,0,9,0,8,7,65,0];
-console.log(`Before zeros are moved ${arr}`);
-moveZerosToEnd_1(arr)
-console.log(`After zeros are moved ${arr}`);
-arr = [1,0,4,5,0,0,9,0,8,7,65,0];
-console.log(`Before zeros are moved ${arr}`);
-moveZerosToEnd_2(arr);
-console.log(`After zeros are moved ${arr}`);
+// Move all 0's to end keeping the other elements' relative order intact - starts
+// let arr = [1, 0, 4, 5, 0, 0, 9, 0, 8, 7, 65, 0];
+// console.log(`Before zeros are moved ${arr}`);
+// moveZerosToEnd_1(arr)
+// console.log(`After zeros are moved ${arr}`);
+// arr = [1, 0, 4, 5, 0, 0, 9, 0, 8, 7, 65, 0];
+// console.log(`Before zeros are moved ${arr}`);
+// moveZerosToEnd_2(arr);
+// console.log(`After zeros are moved ${arr}`);
+// Move all 0's to end keeping the other elements' relative order intact - ends
 
-// Move all 0's to beginning keeping the other elements' relative order intact - ends
 // Array section - ends
+
+// LinkedList section - starts
+
+// Basic linkedlist usage - starts
+const ll1= new LinkedList();
+ll1.insertEnd(12);
+ll1.insertEnd(23);
+ll1.insertEnd(28);
+ll1.insertEnd(10);
+ll1.insertEnd(9);
+ll1.insertEnd(17);
+ll1.print();
+// Basic linkedlist usage - ends
+
+// LinkedList section - ends
