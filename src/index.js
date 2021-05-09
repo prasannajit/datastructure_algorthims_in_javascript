@@ -2,7 +2,11 @@ const { reverse: { reverse_1, reverse_2, reverse_3 } } = require('./string');
 const { binarySearch: { binarySearch_1, binarySearch_2 } } = require('./searching');
 const { quickSort } = require('./sorting');
 const { MinHeap } = require('./heap');
-const { kLargestElements, moveZerosToEnd: { moveZerosToEnd_1, moveZerosToEnd_2 } } = require('./array');
+const {
+    kLargestElements,
+    moveZerosToEnd: { moveZerosToEnd_1, moveZerosToEnd_2 },
+    twoSum: { twoSum_1, twoSum_2 }
+} = require('./array');
 const { LinkedList } = require('./linkedList');
 
 let startTime, endTime;
@@ -99,19 +103,26 @@ let startTime, endTime;
 // console.log(`After zeros are moved ${arr}`);
 // Move all 0's to end keeping the other elements' relative order intact - ends
 
+// Two sum - starts
+console.log(twoSum_1([1, 9, 3, 2, 7, 14, 23, 11], 32));
+console.log(twoSum_1([1, 9, 3, 2, 7, 14, 23, 11], 33));
+console.log(twoSum_2([1, 9, 3, 2, 7, 14, 23, 11], 32));
+console.log(twoSum_2([1, 9, 3, 2, 7, 14, 23, 11], 33));
+// Two sum - ends
+
 // Array section - ends
 
 // LinkedList section - starts
 
 // Basic linkedlist usage - starts
-const ll1= new LinkedList();
-ll1.insertEnd(12);
-ll1.insertEnd(23);
-ll1.insertEnd(28);
-ll1.insertEnd(10);
-ll1.insertEnd(9);
-ll1.insertEnd(17);
-ll1.print();
+// const ll1 = new LinkedList();
+// ll1.insertEnd(12);
+// ll1.insertEnd(23);
+// ll1.insertEnd(28);
+// ll1.insertEnd(10);
+// ll1.insertEnd(9);
+// ll1.insertEnd(17);
+// ll1.print();
 // Basic linkedlist usage - ends
 
 // LinkedList section - ends
