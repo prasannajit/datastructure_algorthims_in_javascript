@@ -7,6 +7,7 @@ const {
     moveZerosToEnd: { moveZerosToEnd_1, moveZerosToEnd_2 },
     twoSum: { twoSum_1, twoSum_2 }
 } = require('./array');
+const { sortedArrayToBST } = require('./tree');
 const { LinkedList } = require('./linkedList');
 
 let startTime, endTime;
@@ -104,10 +105,10 @@ let startTime, endTime;
 // Move all 0's to end keeping the other elements' relative order intact - ends
 
 // Two sum - starts
-console.log(twoSum_1([1, 9, 3, 2, 7, 14, 23, 11], 32));
-console.log(twoSum_1([1, 9, 3, 2, 7, 14, 23, 11], 33));
-console.log(twoSum_2([1, 9, 3, 2, 7, 14, 23, 11], 32));
-console.log(twoSum_2([1, 9, 3, 2, 7, 14, 23, 11], 33));
+// console.log(twoSum_1([1, 9, 3, 2, 7, 14, 23, 11], 32));
+// console.log(twoSum_1([1, 9, 3, 2, 7, 14, 23, 11], 33));
+// console.log(twoSum_2([1, 9, 3, 2, 7, 14, 23, 11], 32));
+// console.log(twoSum_2([1, 9, 3, 2, 7, 14, 23, 11], 33));
 // Two sum - ends
 
 // Array section - ends
@@ -126,3 +127,10 @@ console.log(twoSum_2([1, 9, 3, 2, 7, 14, 23, 11], 33));
 // Basic linkedlist usage - ends
 
 // LinkedList section - ends
+
+// Tree section - starts
+
+// Convert sorted array to BST - starts
+sortedArrayToBST([1,2,3,4,5,6,7,8]);
+// Convert sorted array to BST - ends
+// Tree section - ends

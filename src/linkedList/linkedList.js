@@ -18,6 +18,15 @@ class LinkedList {
 
     }
 
+    /**
+     * Deletes the provided node
+     * @param  {} node
+     */
+    deleteNode(node) {
+        node.val=node.next.val;
+        node.next=node.next.next;
+    }
+
     insertEnd(item) {
         if (this.head) {
             let node = this.head;
@@ -91,10 +100,10 @@ class LinkedList {
     }
 
     print() {
-        let node=this.head;
-        while(node){
+        let node = this.head;
+        while (node) {
             console.log(`Item is ${node.val}`);
-            node=node.next;
+            node = node.next;
         }
     }
 }
