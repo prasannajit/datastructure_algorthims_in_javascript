@@ -1,3 +1,8 @@
+/**
+ * Given a roman string returns the equivalent decimal value 
+ * @param  {String} s roman number in string
+ * @returns {number} decimal equivalent of roman number
+ */
 const romanToInteger = (s) => {
     let sum = 0;
     const roman = (ch) => {
