@@ -23,7 +23,8 @@ const maximumSubArray_1 = (arr) => {
 };
 
 /**
- * Finds the maximum subarray (Kadane's algorithm)
+ * Finds the maximum subarray (Kadane's algorithm).
+ * Time complexity is O(n).
  */
 const maximumSubArray_2 = (arr) => {
     if (arr.length === 0) {

@@ -1,13 +1,17 @@
-const { reverse: { reverse_1, reverse_2, reverse_3 } } = require('./string');
+const {
+    reverse: { reverse_1, reverse_2, reverse_3 },
+    validAnagram: { validAnagram_1,validAnagram_2 }
+} = require('./string');
 const { binarySearch: { binarySearch_1, binarySearch_2 } } = require('./searching');
 const { quickSort } = require('./sorting');
 const { MinHeap } = require('./heap');
 const {
     kLargestElements,
     moveZerosToEnd: { moveZerosToEnd_1, moveZerosToEnd_2 },
-    twoSum: { twoSum_1, twoSum_2 }
+    twoSum: { twoSum_1, twoSum_2 },
+    fizzBuzz,
 } = require('./array');
-const { sortedArrayToBST } = require('./tree');
+const { sortedArrayToBST, BinarySearchTree } = require('./tree');
 const { LinkedList } = require('./linkedList');
 
 let startTime, endTime;
@@ -31,6 +35,10 @@ let startTime, endTime;
 // console.log(reverse_1('ab'));
 // console.log(reverse_1('a'));
 // reverse a string -- ends
+
+// valid anagram starts -- starts
+console.log(`${validAnagram_2('abc', 'cba')}`);
+// valid anagram starts -- ends
 
 // string section - ends
 
@@ -89,6 +97,10 @@ let startTime, endTime;
 
 // Array section - starts
 
+//FizzBuzz- starts
+// console.log(fizzBuzz([1,3,5,15,23,17,12]));
+//FizzBuzz- ends
+
 // Find K largest elements in an array - starts
 // console.log(kLargestElements([1, 29, 3, 45, 78, 7, 13, 47, 11, 73], 4));
 // Find K largest elements in an array - ends
@@ -131,6 +143,22 @@ let startTime, endTime;
 // Tree section - starts
 
 // Convert sorted array to BST - starts
-sortedArrayToBST([1,2,3,4,5,6,7,8]);
+// sortedArrayToBST([1,2,3,4,5,6,7,8]);
 // Convert sorted array to BST - ends
+
+// Binary tree in order traversal - starts
+// const bst=new BinarySearchTree();
+// bst.add(10);
+// bst.add(8);
+// bst.add(9);
+// bst.add(6);
+// bst.add(5);
+// bst.add(4);
+// bst.add(20);
+// bst.add(15);
+// bst.add(23);
+// bst.add(17);
+// bst.add(27);
+// bst.inOrderTraversal();
+// Binary tree in order traversal - ends
 // Tree section - ends
