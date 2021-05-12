@@ -1,6 +1,7 @@
 const {
     reverse: { reverse_1, reverse_2, reverse_3 },
-    validAnagram: { validAnagram_1,validAnagram_2 }
+    validAnagram: { validAnagram_1,validAnagram_2 },
+    isValidPallindrome,
 } = require('./string');
 const { binarySearch: { binarySearch_1, binarySearch_2 } } = require('./searching');
 const { quickSort } = require('./sorting');
@@ -36,9 +37,13 @@ let startTime, endTime;
 // console.log(reverse_1('a'));
 // reverse a string -- ends
 
-// valid anagram starts -- starts
-console.log(`${validAnagram_2('abc', 'cba')}`);
-// valid anagram starts -- ends
+// valid anagram -- starts
+// console.log(`${validAnagram_2('abc', 'cba')}`);
+// valid anagram -- ends
+
+// is valid pallindrome -- starts
+console.log(`${isValidPallindrome('ab_a')}`);
+// is valid pallindrome  -- ends
 
 // string section - ends
 
