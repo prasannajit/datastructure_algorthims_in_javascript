@@ -1,6 +1,6 @@
 const {
     reverse: { reverse_1, reverse_2, reverse_3 },
-    validAnagram: { validAnagram_1,validAnagram_2 },
+    validAnagram: { validAnagram_1, validAnagram_2 },
     isValidPallindrome,
 } = require('./string');
 const { binarySearch: { binarySearch_1, binarySearch_2 } } = require('./searching');
@@ -14,6 +14,7 @@ const {
 } = require('./array');
 const { sortedArrayToBST, BinarySearchTree } = require('./tree');
 const { LinkedList } = require('./linkedList');
+const { fibonacci } = require('./misc');
 
 let startTime, endTime;
 // string section - starts
@@ -42,7 +43,7 @@ let startTime, endTime;
 // valid anagram -- ends
 
 // is valid pallindrome -- starts
-console.log(`${isValidPallindrome('ab_a')}`);
+// console.log(`${isValidPallindrome('ab_a')}`);
 // is valid pallindrome  -- ends
 
 // string section - ends
@@ -167,3 +168,7 @@ console.log(`${isValidPallindrome('ab_a')}`);
 // bst.inOrderTraversal();
 // Binary tree in order traversal - ends
 // Tree section - ends
+
+// Misc section - starts
+console.log(fibonacci(80));
+// Misc section - ends
