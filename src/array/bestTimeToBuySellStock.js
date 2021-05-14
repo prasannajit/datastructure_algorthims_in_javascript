@@ -1,5 +1,9 @@
 // https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
-
+/**
+ * Find the max profit if stock can be bought first and sold later
+ * @param  {number[]} prices
+ * @return {number} max profit
+ */
 const bestTimeToBuyAndSellStock = (prices) => {
     if (prices.length < 2) {
         return 0;

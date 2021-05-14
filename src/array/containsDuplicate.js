@@ -8,6 +8,7 @@ const containsDuplicate_1 = (arr) => {
     }
     return false;
 };
+
 const containsDuplicate_2 = (arr) => {
     let map = new Map();
     for (let i = 0; i < arr.length; i++) {
@@ -19,6 +20,7 @@ const containsDuplicate_2 = (arr) => {
     }
     return false;
 };
+
 const containsDuplicate_3 = (arr) => {
     const arrCopy = arr.slice(0);
     arrCopy.sort((a, b) => a - b);
