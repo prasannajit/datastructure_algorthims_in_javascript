@@ -1,5 +1,6 @@
 const LinkedList = require('./linkedList');
 const intersectionOfLists = require('./intersectionOfLists');
 const swappingKthNode=require('./swappingKthNode');
+const addTwoNumbers = require('./addTwoNumbers');
 
-module.exports = { LinkedList, intersectionOfLists, swappingKthNode };
+module.exports = { addTwoNumbers, LinkedList, intersectionOfLists, swappingKthNode };
