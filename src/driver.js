@@ -2,6 +2,8 @@ const {
     reverse: { reverse_1, reverse_2, reverse_3 },
     validAnagram: { validAnagram_1, validAnagram_2 },
     isValidPallindrome,
+    lengthOfLongestSubstring,
+    minWindowSubstring,
 } = require('./string');
 const { binarySearch: { binarySearch_1, binarySearch_2 } } = require('./searching');
 const { quickSort } = require('./sorting');
@@ -15,9 +17,57 @@ const {
 const { sortedArrayToBST, BinarySearchTree } = require('./tree');
 const { LinkedList } = require('./linkedList');
 const { fibonacci } = require('./misc');
+const { Graph, WeightedGraph } = require('./graph');
 
 let startTime, endTime;
+// Graph section - starts
+
+// Basic graph -- starts
+// let g = new Graph();
+// g.addVertex('A');
+// g.addVertex('B');
+// g.addVertex('C');
+// g.addEdge('A', 'B', false);
+// g.addEdge('A', 'C', false);
+// g.addEdge('B', 'C', false);
+// g.removeEdge('B','C',false);
+// g.removeVertex('A');
+// g.removeVertex('B');
+// console.log(g.depthFirstTraversalRecursive('A'));
+//g.breadthFirstTraversal('A');
+//console.log(g);
+// Basic graph -- ends
+
+// weighted graph -- starts
+// const wg= new WeightedGraph();
+// wg.addVertex('A');
+// wg.addVertex('B');
+// wg.addVertex('C');
+// wg.addVertex('D');
+// wg.addVertex('E');
+// wg.addVertex('F');
+// wg.addEdge('A','B',4);
+// wg.addEdge('A','C',2);
+// wg.addEdge('B','E',3);
+// wg.addEdge('C','D',2);
+// wg.addEdge('C','F',4);
+// wg.addEdge('D','E',3);
+// wg.addEdge('D','F',1);
+// wg.addEdge('E','F',1);
+// console.log(wg.shortestPath('A','E'));
+// weighted graph -- ends
+
+// Graph section - ends
+
 // string section - starts
+
+// lengthOfLongestSubstring -- starts
+//console.log(lengthOfLongestSubstring("abbba"));
+// lengthOfLongestSubstring -- ends
+
+// minWindowSubstring -- starts
+console.log(minWindowSubstring("ADOBECODEBANC","ABC"));
+// minWindowSubstring -- ends
 
 // reverse a string -- starts
 // startTime = process.hrtime.bigint();
@@ -170,5 +220,9 @@ let startTime, endTime;
 // Tree section - ends
 
 // Misc section - starts
-console.log(fibonacci(80));
+
+// fibonacci -- starts
+// console.log(fibonacci(80));
+// fibonacci -- ends
+
 // Misc section - ends
