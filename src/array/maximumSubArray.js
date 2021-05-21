@@ -1,6 +1,6 @@
 /**
  * Finds maximum subarray. Uses a O(n2) solution to find
- * all possible sumarrays and their sum.
+ * all possible subarrays and their sum.
  * @param  {Array} arr list of numbers with positive,0 and negative numbers
  * @return {number} sum of maximum subarray
  */
