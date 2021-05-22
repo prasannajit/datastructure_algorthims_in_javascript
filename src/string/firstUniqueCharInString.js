@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/first-unique-character-in-a-string/
 /**
  * Finds the first unique character in the given string.
  * @param  {string} str input string

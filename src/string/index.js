@@ -3,8 +3,9 @@ const validAnagram = require('./validAnagram');
 const firstUniqueCharInString = require('./firstUniqueCharInString');
 const isValidPallindrome = require('./isValidPallindrome');
 const isValidPallindrome2 = require('./isValidPallindrome2');
-const lengthOfLongestSubstring = require('./lengthOfLongestSubstring');
+const lengthOfLongestSubstring = require('./lengthOfLongestSubstringNoRepChar');
 const minWindowSubstring = require('./minWindowSubstring');
+const longestSubstWithKDistinctChars = require('./longestSubstrWithKDistinctChars');
 
 module.exports = {
     reverse,
@@ -14,4 +15,5 @@ module.exports = {
     firstUniqueCharInString,
     lengthOfLongestSubstring,
     minWindowSubstring,
+    longestSubstWithKDistinctChars,
 };

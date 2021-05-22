@@ -1,3 +1,10 @@
+// https://leetcode.com/problems/valid-anagram/
+
+/**
+ * @param  {string} s
+ * @param  {string} t
+ * @return {boolean}
+ */
 const validAnagram_1 = (s, t) => {
     let map = new Map();
     if (s.length !== t.length) {

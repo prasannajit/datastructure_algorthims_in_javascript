@@ -2,8 +2,9 @@ const {
     reverse: { reverse_1, reverse_2, reverse_3 },
     validAnagram: { validAnagram_1, validAnagram_2 },
     isValidPallindrome,
-    lengthOfLongestSubstring,
+    lengthOfLongestSubstringNoRepChar,
     minWindowSubstring,
+    longestSubstWithKDistinctChars,
 } = require('./string');
 const { binarySearch: { binarySearch_1, binarySearch_2 } } = require('./searching');
 const { quickSort } = require('./sorting');
@@ -15,6 +16,7 @@ const {
     fizzBuzz,
     averageOfKNumbers,
     maxSumSubArraySizeK,
+    smallestSubarrayOfSumS: { smallestSubarrayOfSumS_1, smallestSubarrayOfSumS_2 },
 } = require('./array');
 const { sortedArrayToBST, BinarySearchTree } = require('./tree');
 const { LinkedList } = require('./linkedList');
@@ -64,9 +66,17 @@ let startTime, endTime;
 }
 // string section - starts
 {
-    // lengthOfLongestSubstring -- starts
-    //console.log(lengthOfLongestSubstring("abbba"));
-    // lengthOfLongestSubstring -- ends
+    // longest substring with k distinct characters -- starts
+    {
+        console.log(longestSubstWithKDistinctChars("araaci", 2));
+        // longest substring with k distinct characters -- ends
+    }
+
+    // length of longest substring with no repeating characters -- starts
+    {
+        // console.log(lengthOfLongestSubstringNoRepChar("abbba"));
+        // length of longest substring with no repeating characters -- ends
+    }
 
     // minWindowSubstring -- starts
     // console.log(minWindowSubstring("ADOBECODEBANC","ABC"));
@@ -164,11 +174,16 @@ let startTime, endTime;
 
     // Max sum of subarray of size k -- starts
     {
-        console.log(maxSumSubArraySizeK([2, 1, 5, 1, 3, 2],3));
-        console.log(maxSumSubArraySizeK([2, 3, 4, 1, 5],2));
+        // console.log(maxSumSubArraySizeK([2, 1, 5, 1, 3, 2],3));
+        // console.log(maxSumSubArraySizeK([2, 3, 4, 1, 5],2));
         // Max sum of subarray of size k -- ends
     }
 
+    // length of minimum subarray of size S or more -- starts
+    {
+        // console.log(smallestSubarrayOfSumS_2([3, 4, 1, 1, 6],7));
+        // length of minimum subarray of size S or more -- ends
+    }
     // FizzBuzz- starts
     // console.log(fizzBuzz([1,3,5,15,23,17,12]));
     // FizzBuzz- ends

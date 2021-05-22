@@ -5,7 +5,7 @@ const maximumSubArray = require('./maximumSubArray');
 const bestTimeToBuyAndSellStock = require('./bestTimeToBuySellStock');
 const averageOfKNumbers = require('./averageOfKNumbers');
 const maxSumSubArraySizeK = require('./maxSumSubArraySizeK');
-
+const smallestSubarrayOfSumS = require('./smallestSubarrayOfSumS');
 
 module.exports = {
     kLargestElements,
@@ -15,4 +15,5 @@ module.exports = {
     bestTimeToBuyAndSellStock,
     averageOfKNumbers,
     maxSumSubArraySizeK,
+    smallestSubarrayOfSumS,
 };
