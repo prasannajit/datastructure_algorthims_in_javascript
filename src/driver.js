@@ -6,7 +6,11 @@ const {
     minWindowSubstring,
     longestSubstWithKDistinctChars,
 } = require('./string');
-const { binarySearch: { binarySearch_1, binarySearch_2 } } = require('./searching');
+const {
+    binarySearch: { binarySearch_1, binarySearch_2 },
+    findAnagramsOfPattern,
+    searchPermutationOfString
+} = require('./searching');
 const { quickSort } = require('./sorting');
 const { MinHeap } = require('./heap');
 const {
@@ -16,6 +20,7 @@ const {
     fizzBuzz,
     averageOfKNumbers,
     maxSumSubArraySizeK,
+    removeDuplicateSortedArray,
     smallestSubarrayOfSumS: { smallestSubarrayOfSumS_1, smallestSubarrayOfSumS_2 },
 } = require('./array');
 const { sortedArrayToBST, BinarySearchTree } = require('./tree');
@@ -68,7 +73,7 @@ let startTime, endTime;
 {
     // longest substring with k distinct characters -- starts
     {
-        console.log(longestSubstWithKDistinctChars("araaci", 2));
+        // console.log(longestSubstWithKDistinctChars("araaci", 2));
         // longest substring with k distinct characters -- ends
     }
 
@@ -120,6 +125,16 @@ let startTime, endTime;
     // console.log(binarySearch_1([1], 1));
     // binary search -- ends
 
+    // search permutation of string in another string -- starts
+    {
+        // console.log(searchPermutationOfString('aaacb','abc'));
+        // search permutation of string in another string -- ends
+    }
+    // string anagrams search -- starts
+    {
+        console.log(findAnagramsOfPattern('ppqp', 'pq'));
+        // string anagrams search -- ends
+    }
     // search section - ends
 }
 // sorting section - starts
@@ -166,6 +181,11 @@ let startTime, endTime;
 }
 // Array section - starts
 {
+    // remove duplicates from sorted array -- starts
+    {
+        console.log(removeDuplicateSortedArray([1,1,2]));
+        // remove duplicates from sorted array -- ends
+    }
     // Average of K numbers -- starts
     {
         // console.log(averageOfKNumbers([1,2,3,4,5,6,7,8,9,10,11,12,13,14],5));

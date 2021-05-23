@@ -6,6 +6,7 @@ const bestTimeToBuyAndSellStock = require('./bestTimeToBuySellStock');
 const averageOfKNumbers = require('./averageOfKNumbers');
 const maxSumSubArraySizeK = require('./maxSumSubArraySizeK');
 const smallestSubarrayOfSumS = require('./smallestSubarrayOfSumS');
+const removeDuplicateSortedArray = require('./removeDuplicateSortedArray');
 
 module.exports = {
     kLargestElements,
@@ -16,4 +17,5 @@ module.exports = {
     averageOfKNumbers,
     maxSumSubArraySizeK,
     smallestSubarrayOfSumS,
+    removeDuplicateSortedArray,
 };
