@@ -21,7 +21,9 @@ const {
     averageOfKNumbers,
     maxSumSubArraySizeK,
     removeDuplicateSortedArray,
+    dutchNationalFlag,
     smallestSubarrayOfSumS: { smallestSubarrayOfSumS_1, smallestSubarrayOfSumS_2 },
+    quadrupleSumToTarget,
 } = require('./array');
 const { sortedArrayToBST, BinarySearchTree } = require('./tree');
 const { LinkedList } = require('./linkedList');
@@ -132,7 +134,7 @@ let startTime, endTime;
     }
     // string anagrams search -- starts
     {
-        console.log(findAnagramsOfPattern('ppqp', 'pq'));
+        // console.log(findAnagramsOfPattern('ppqp', 'pq'));
         // string anagrams search -- ends
     }
     // search section - ends
@@ -181,14 +183,24 @@ let startTime, endTime;
 }
 // Array section - starts
 {
+    // Dutch national flag problem -- starts
+    {
+        // console.log(dutchNationalFlag([1, 0, 2, 1, 0]));
+        // Dutch national flag problem -- ends
+    }
+    // quadruple sum -- starts
+    {
+        // console.log(quadrupleSumToTarget([4, 1, 2, -1, 1, -3],1));
+        // quadruple sum -- ends
+    }
     // remove duplicates from sorted array -- starts
     {
-        console.log(removeDuplicateSortedArray([1,1,2]));
+        // console.log(removeDuplicateSortedArray([1,1,2]));
         // remove duplicates from sorted array -- ends
     }
     // Average of K numbers -- starts
     {
-        // console.log(averageOfKNumbers([1,2,3,4,5,6,7,8,9,10,11,12,13,14],5));
+        console.log(averageOfKNumbers([1,2,3,4,5,6,7,8,9,10,11,12,13,14],5));
         // Average of K numbers -- ends
     }
 

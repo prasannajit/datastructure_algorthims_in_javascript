@@ -7,6 +7,8 @@ const averageOfKNumbers = require('./averageOfKNumbers');
 const maxSumSubArraySizeK = require('./maxSumSubArraySizeK');
 const smallestSubarrayOfSumS = require('./smallestSubarrayOfSumS');
 const removeDuplicateSortedArray = require('./removeDuplicateSortedArray');
+const dutchNationalFlag = require('./dutchNationalFlag');
+const quadrupleSumToTarget = require('./quadrupleSumToTarget');
 
 module.exports = {
     kLargestElements,
@@ -18,4 +20,6 @@ module.exports = {
     maxSumSubArraySizeK,
     smallestSubarrayOfSumS,
     removeDuplicateSortedArray,
+    dutchNationalFlag,
+    quadrupleSumToTarget,
 };

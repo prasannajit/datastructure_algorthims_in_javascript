@@ -21,17 +21,17 @@ const averageOfKNumbers = (arr, k) => {
 
     // solution 2
     let result = [];
-    let wSum = 0;
-    let wStart = 0;
-    let wEnd = 0;
-    while (wEnd < arr.length) {
-        wSum += arr[wEnd];
-        if (wEnd >= k-1) {
-            result.push((wSum / k).toFixed(2));
-            wSum-=arr[wStart];
-            wStart+=1;
+    let start = 0;
+    let end = 0;
+    let sum = 0;
+    while (end < arr.length) {
+        sum += arr[end];
+        if (end >= k - 1) {
+            result.push(sum / k);
+            sum -= arr[start];
+            start++;
         }
-        wEnd+=1;
+        end++;
     }
     return result;
 };
