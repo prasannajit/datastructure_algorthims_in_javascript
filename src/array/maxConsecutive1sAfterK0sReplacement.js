@@ -8,7 +8,7 @@ const maxConsecutive1sAfterK0sReplacement = (nums, k) => {
         if (nums[end] === 1) {
             oneCount += 1;
         }
-        while (end - start + 1 - oneCount > k) {
+        if(end - start + 1 - oneCount > k) {
             if (nums[start] === 1) {
                 oneCount--;
             }
