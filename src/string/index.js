@@ -7,6 +7,8 @@ const lengthOfLongestSubstringNoRepChar = require('./lengthOfLongestSubstringNoR
 const minWindowSubstring = require('./minWindowSubstring');
 const longestSubstWithKDistinctChars = require('./longestSubstrWithKDistinctChars');
 const longestSubstringAfterReplacement = require('./longestSubstringAfterReplacement');
+const permutationInString = require('./permutationInString');
+
 
 module.exports = {
     reverse,
@@ -18,4 +20,5 @@ module.exports = {
     minWindowSubstring,
     longestSubstWithKDistinctChars,
     longestSubstringAfterReplacement,
+    permutationInString,
 };

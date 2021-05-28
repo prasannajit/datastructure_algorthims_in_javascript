@@ -6,6 +6,7 @@ const {
     minWindowSubstring,
     longestSubstWithKDistinctChars,
     longestSubstringAfterReplacement,
+    permutationInString,
 } = require('./string');
 const {
     binarySearch: { binarySearch_1, binarySearch_2 },
@@ -89,8 +90,13 @@ let startTime, endTime;
 
     // longestSubstringAfterReplacement -- starts
     {
-        console.log(longestSubstringAfterReplacement("ABAB",2));
+        // console.log(longestSubstringAfterReplacement("ABAB",2));
         // longestSubstringAfterReplacement -- ends
+    }
+    // permutationInString -- starts
+    {
+        console.log(permutationInString("abcdxabcde","abcdeabcdx"));
+        // permutationInString -- ends
     }
     // minWindowSubstring -- starts
     // console.log(minWindowSubstring("ADOBECODEBANC","ABC"));
