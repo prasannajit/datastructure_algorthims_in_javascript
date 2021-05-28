@@ -5,6 +5,7 @@ const {
     lengthOfLongestSubstringNoRepChar,
     minWindowSubstring,
     longestSubstWithKDistinctChars,
+    longestSubstringAfterReplacement,
 } = require('./string');
 const {
     binarySearch: { binarySearch_1, binarySearch_2 },
@@ -82,9 +83,15 @@ let startTime, endTime;
     // length of longest substring with no repeating characters -- starts
     {
         // console.log(lengthOfLongestSubstringNoRepChar("abbba"));
+        // console.log(lengthOfLongestSubstringNoRepChar("abcabcbb"));
         // length of longest substring with no repeating characters -- ends
     }
 
+    // longestSubstringAfterReplacement -- starts
+    {
+        console.log(longestSubstringAfterReplacement("ABAB",2));
+        // longestSubstringAfterReplacement -- ends
+    }
     // minWindowSubstring -- starts
     // console.log(minWindowSubstring("ADOBECODEBANC","ABC"));
     // minWindowSubstring -- ends
@@ -200,7 +207,7 @@ let startTime, endTime;
     }
     // Average of K numbers -- starts
     {
-        console.log(averageOfKNumbers([1,2,3,4,5,6,7,8,9,10,11,12,13,14],5));
+        // console.log(averageOfKNumbers([1,2,3,4,5,6,7,8,9,10,11,12,13,14],5));
         // Average of K numbers -- ends
     }
 
