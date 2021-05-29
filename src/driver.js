@@ -7,6 +7,7 @@ const {
     longestSubstWithKDistinctChars,
     longestSubstringAfterReplacement,
     permutationInString,
+    findSubstringsThatContainVowels,
 } = require('./string');
 const {
     binarySearch: { binarySearch_1, binarySearch_2 },
@@ -95,8 +96,13 @@ let startTime, endTime;
     }
     // permutationInString -- starts
     {
-        console.log(permutationInString("abcdxabcde","abcdeabcdx"));
+        // console.log(permutationInString("abcdxabcde","abcdeabcdx"));
         // permutationInString -- ends
+    }
+    // findSubstringsThatContainVowels -- starts
+    {
+        console.log(findSubstringsThatContainVowels('aeouiiauxpuaei'));
+        // findSubstringsThatContainVowels -- ends
     }
     // minWindowSubstring -- starts
     // console.log(minWindowSubstring("ADOBECODEBANC","ABC"));

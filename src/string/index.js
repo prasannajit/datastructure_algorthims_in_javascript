@@ -8,7 +8,7 @@ const minWindowSubstring = require('./minWindowSubstring');
 const longestSubstWithKDistinctChars = require('./longestSubstrWithKDistinctChars');
 const longestSubstringAfterReplacement = require('./longestSubstringAfterReplacement');
 const permutationInString = require('./permutationInString');
-
+const findSubstringsThatContainVowels = require('./findSubstringsThatContainVowels');
 
 module.exports = {
     reverse,
@@ -21,4 +21,5 @@ module.exports = {
     longestSubstWithKDistinctChars,
     longestSubstringAfterReplacement,
     permutationInString,
+    findSubstringsThatContainVowels,
 };
