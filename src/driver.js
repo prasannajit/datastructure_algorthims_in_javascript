@@ -12,7 +12,8 @@ const {
 const {
     binarySearch: { binarySearch_1, binarySearch_2 },
     findAnagramsOfPattern,
-    searchPermutationOfString
+    searchPermutationOfString,
+    searchInfiniteArray: { searchInfiniteArray_1, ArrayReader },
 } = require('./searching');
 const { quickSort } = require('./sorting');
 const { MinHeap } = require('./heap');
@@ -155,6 +156,16 @@ let startTime, endTime;
     {
         // console.log(findAnagramsOfPattern('ppqp', 'pq'));
         // string anagrams search -- ends
+    }
+    // search infinite array -- starts
+    {
+        var reader = new ArrayReader([4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30]);
+        console.log(searchInfiniteArray_1(reader, 16))
+        console.log(searchInfiniteArray_1(reader, 11))
+        reader = new ArrayReader([1, 3, 8, 10, 15])
+        console.log(searchInfiniteArray_1(reader, 15))
+        console.log(searchInfiniteArray_1(reader, 200))
+        // search infinite array -- ends
     }
     // search section - ends
 }
