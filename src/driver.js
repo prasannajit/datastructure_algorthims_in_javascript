@@ -14,6 +14,9 @@ const {
     findAnagramsOfPattern,
     searchPermutationOfString,
     searchInfiniteArray: { searchInfiniteArray_1, ArrayReader },
+    searchBitonicArray,
+    searchRotatedArray,
+    searchRangeOfNumberSortedArray,
 } = require('./searching');
 const { quickSort } = require('./sorting');
 const { MinHeap } = require('./heap');
@@ -102,7 +105,7 @@ let startTime, endTime;
     }
     // findSubstringsThatContainVowels -- starts
     {
-        console.log(findSubstringsThatContainVowels('aeouiiauxpuaei'));
+        // console.log(findSubstringsThatContainVowels('aeouiiauxpuaei'));
         // findSubstringsThatContainVowels -- ends
     }
     // minWindowSubstring -- starts
@@ -159,13 +162,29 @@ let startTime, endTime;
     }
     // search infinite array -- starts
     {
-        var reader = new ArrayReader([4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30]);
-        console.log(searchInfiniteArray_1(reader, 16))
-        console.log(searchInfiniteArray_1(reader, 11))
-        reader = new ArrayReader([1, 3, 8, 10, 15])
-        console.log(searchInfiniteArray_1(reader, 15))
-        console.log(searchInfiniteArray_1(reader, 200))
+        // var reader = new ArrayReader([4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30]);
+        // console.log(searchInfiniteArray_1(reader, 16))
+        // console.log(searchInfiniteArray_1(reader, 11))
+        // reader = new ArrayReader([1, 3, 8, 10, 15])
+        // console.log(searchInfiniteArray_1(reader, 15))
+        // console.log(searchInfiniteArray_1(reader, 200))
         // search infinite array -- ends
+    }
+    // search bitonic array -- starts
+    {
+        // console.log(searchBitonicArray([1, 3, 8, 4, 3],4));
+        // console.log(searchBitonicArray([10, 9, 8],10));
+        // srarch bitonic array --ends
+    }
+    // search rotated array -- starts
+    {
+        // console.log(searchRotatedArray([4, 5, 6,7,0,1,2],0));
+        // search rotated array -- ends
+    }
+    // search first and last position of a number in a sorted array -- starts
+    {
+        console.log(searchRangeOfNumberSortedArray([2,2],2));
+        // search first and last position of a number in a sorted array -- ends
     }
     // search section - ends
 }

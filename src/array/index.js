@@ -10,8 +10,10 @@ const removeDuplicateSortedArray = require('./removeDuplicateSortedArray');
 const dutchNationalFlag = require('./dutchNationalFlag');
 const quadrupleSumToTarget = require('./quadrupleSumToTarget');
 const maxConsecutive1sAfterK0sReplacement = require('./maxConsecutive1sAfterK0sReplacement');
+const mergeIntervals=require('./mergeIntervals');
 
 module.exports = {
+    mergeIntervals,
     kLargestElements,
     moveZerosToEnd,
     twoSum,

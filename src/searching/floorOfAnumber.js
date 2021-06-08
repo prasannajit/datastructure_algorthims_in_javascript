@@ -8,6 +8,9 @@ const floorOfANumber = (arr, key) => {
     if (key < arr[0]) {
         return -1;
     }
+    if (key > arr[arr.length - 1]) {
+        return arr.length - 1;
+    }
     let start = 0;
     let end = arr.length - 1;
     while (start <= end) {
